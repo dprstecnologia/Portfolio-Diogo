@@ -1,0 +1,43 @@
+/* Configurações Footer*/
+
+footer {
+  background-color: var(--cinza);
+}
+
+footer .footer__content {
+  text-align: center;
+  padding: 6rem 2rem 1rem;
+  max-width: 47rem;
+}
+
+footer .footer__content .footer__contact span {
+  display: block;
+  font-weight: 600;
+}
+
+footer .footer__content ul li {
+  display: inline-block;
+}
+
+footer .footer__content ul li a {
+  display: inline-block;
+  padding: 1rem;
+  color: var(--white);
+}
+
+footer .footer__content .footer__copyright {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+/* Estilo para os ícones do footer */
+.footer__content ul li a {
+  display: inline-block;
+  padding: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer__content ul li a:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  opacity: 0.8; /* Leve transparência */
+}

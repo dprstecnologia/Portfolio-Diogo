@@ -1,0 +1,73 @@
+/* Configurações sobre*/
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+  }
+  
+  .about .about__left {
+    max-width: 40rem;
+    flex: 1;
+  }
+  
+  .about .about__left p {
+    margin: 1rem 0 2rem;
+  }
+  
+  .about .about__left ul {
+    margin-left: -1.2rem;
+  }
+  
+  .about .about__left ul li {
+    display: inline-block;
+  }
+  
+  .about .about__left ul li a {
+    display: inline-block;
+    padding: 1rem;
+  }
+  
+  .about .about__left ul li a img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .about .about__right {
+    flex: 1;
+    max-width: 66rem;
+  }
+  
+  .img-sobre {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about .about__left {
+      max-width: 66rem;
+      text-align: center;
+    }
+  
+    .about .about__right {
+      text-align: center;
+    }
+  }
+
+  /* Estilo para os ícones das redes sociais na seção about */
+.about__left ul li a {
+  display: inline-block;
+  padding: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.about__left ul li a:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+  opacity: 0.8; /* Leve transparência */
+}

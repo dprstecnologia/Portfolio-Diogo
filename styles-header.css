@@ -1,0 +1,106 @@
+/* Configurações Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  scroll-margin-top: 20rem;
+  padding: 2rem 0; /* Diminui o espaçamento interno do header */
+  gap: 3rem; /* Reduz o espaçamento entre os elementos */
+  scroll-margin-top: 10rem; /* Ajusta o scroll-margin para refletir a nova altura */
+}
+
+header .header__left {
+  max-width: 62rem;
+  flex: 1;
+}
+
+header .header__left h1 {
+    font-size: 2.8rem; /* Diminui o tamanho da fonte do título */
+    margin-bottom: 1.5rem; /* Reduz a margem inferior do título */
+}
+
+header .header__left p {
+  /* max-width: 55rem; */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-size: 1.8rem; /* Diminui o tamanho da fonte do título */
+}
+
+header .header__right .header__image {
+  position: relative;
+  line-height: 0;
+}
+
+header .header__right .header__image {
+  position: relative;
+  line-height: 0;
+}
+
+header .header__right .header__image::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: solid 1px var(--tertiary-color);
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+header .header__right .header__image .diogo {
+  border-radius: 0.25rem; /* Menor raio de borda */
+  min-width: 15rem; /* Diminuir a largura mínima */
+  max-width: 60%; /* Diminuir a largura máxima */
+}
+
+header .header__right .header__image .background {
+  position: absolute;
+  top: -4rem;
+  right: -2.5rem;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  header .header__left h1 {
+    font-size: 0.8rem; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0; /* Remover a margem padrão, se necessário */
+  }
+
+  header .header__left p {
+    margin: 2rem auto 4rem;
+  }
+}
+
+/* Estilização básica do botão */
+.btn {
+  background-color: none;
+  border: none;
+  outline: none;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilização específica para o botão primário */
+.btn.btn-primary {
+  background-color: var(--dark-secondary-color);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* Efeito hover para o botão */
+.btn.btn-primary:hover {
+  background-color: var(--tertiary-color); /* Altera a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o botão */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+}

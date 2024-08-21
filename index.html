@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- scrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- Title -->
+    <title>Diogo Pereira</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles-padrao.css">
+    <link rel="stylesheet" href="./styles-menu.css">
+    <link rel="stylesheet" href="./styles-header.css">
+    <link rel="stylesheet" href="./styles-projetos.css">
+    <link rel="stylesheet" href="./styles-sobre.css">
+    <link rel="stylesheet" href="./styles-habilidades.css">
+    <link rel="stylesheet" href="./styles-footer.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="/">
+                <img src="./assets/img/logo.png" alt="Diogo Pereira" height="30px">
+            </a>
+            <div class="navbar__mobile">
+                <img src="./assets/img/menu-branco.png" alt="menu" class="burger" id="burger">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <ul class="fullscreen-menu__links">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#footer">Contatos</a></li>
+        </ul>
+        <div class="close-menu" id="closeMenu">&times;</div>
+    </div>
+
+    <!-- HTML header -->
+    <header id="header" class="max-width">
+        <div class="header__left">
+            <h1>Olá! Sou Diogo Pereira, Desenvolvedor FullStack.</h1>
+            <p> Impulsionado pela minha busca constante por novos desafios, estou em transição de carreira,
+                migrando da área de Dados para o universo do Desenvolvimento.
+                Essa mudança reflete meu desejo de explorar um campo dinâmico, repleto de oportunidades de inovação e
+                superação.
+            </p>
+            <a href="#about" class="btn btn-primary">Saiba mais!</a>
+        </div>
+        <div class="header__right">
+            <div class="header__image">
+                <img src="./assets/img/Diogo-Perfil.png" alt="Diogo Pereira" class="diogo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Projetos -->
+    <!-- <section id="projects" class="projects max-width">
+        <div class="projects__content">
+            <h2 class="secondary-title">Projetos</h2>
+            <p>
+                De conceitos a projetos bem-sucedidos, aqui estão alguns dos
+                meus trabalhos mais recentes
+            </p>
+        </div>
+        <ul>
+            <li class="li-1">
+                <div class="image">
+                    <img src="assets/proj-dashboard-financeiro.png" alt="Sistema de controle financeiro">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Sistema de controle financeiro</h3>
+                    <p>
+                        Sistema web desenvolvido com funcionalidades
+                        como, filtros, atribuição de transações por período e categoria, evolução financeira e
+                        acompanhamento do status das atividades como, saldo, receitas e gastos.
+                    </p>
+                    <a href=".....link do projeto" target="_blank">Devbills &rarr;</a>
+                    <a class="link" href="......link do repositorio" target="_blank">GitHub &rarr;</a>
+                </div>
+            </li>
+
+            <li class="projects__reversed-list li-2">
+                <div class="image">
+                    <img src="assets/proj-site-serviços.png" alt="Site de serviços">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Site de serviços</h3>
+                    <p>
+                        Sistema web desenvolvido com funcionalidades
+                        como contrato de serviços em geral, contato do cliente diretamento com o prestador do serviço e
+                        atendimento totalmente online.
+                    </p>
+                    <a href="https://ailtonjunior11.github.io/Super-Mario-Bros/" target="_blank">Dev Serviços &rarr;</a>
+                    <a class="link" href="https://github.com/ailtonjunior11/Super-Mario-Bros" target="_blank">GitHub
+                        &rarr;</a>
+                </div>
+            </li>
+
+            <li class="li-3">
+                <div class="image">
+                    <img src="assets/proj-site-cafeteria.png" alt="Site de cafeteria">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Site de cafeteria</h3>
+                    <p>
+                        Sistema web desenvolvido com funcionalidades
+                        como, atendimento online, sistema de cardapio digital.
+                    </p>
+                    <a href="https://ailtonjunior11.github.io/dev-cafe/" target="_blank">Dev Café &rarr;</a>
+                    <a class="link" href="https://github.com/ailtonjunior11/dev-cafe">GitHub &rarr;</a>
+                </div>
+            </li>
+
+            <li class="projects__reversed-list li-4">
+                <div class="image">
+                    <img src="assets/proj-slider-turismo.png" alt="Slider de turismo">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Pagina de Slider Turístico</h3>
+                    <p>
+                        Sistema web desenvolvido com funcionalidades
+                        como, slider de turismo, para o usuário ter uma experiência satisfatoria, com curiosidades e
+                        belas
+                        paisagens.
+                    </p>
+                    <a href="https://ailtonjunior11.github.io/tourist-slider/" target="_blank">Dev Turismo &rarr;</a>
+                    <a class="link" href="https://github.com/ailtonjunior11/tourist-slider" target="_blank">GitHub
+                        &rarr;</a>
+                </div>
+            </li>
+        </ul>
+    </section> -->
+
+    <!-- sobre -->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+            <h2 class="secondary-title">Diogo. Além dos códigos.</h2>
+            <p>Minha redes sociais:</p>
+            <ul>
+                <!-- <li><a href="https://www.linkedin.com/in/diogo-pereira-dos-santos/" target="_blank">
+                        <img src="./assets/img/linkdin.png" alt="Linkedin" class="img-sobre">
+                    </a>
+                </li> -->
+                <li><a href="https://www.linkedin.com/in/diogo-pereira-dos-santos-19b0532b6/" target="_blank">
+                        <img src="./assets/img/linkdin.png" alt="Linkedin" class="img-sobre">
+                    </a>
+                </li>
+                <li><a href="https://github.com/dprstecnologia" target="_blank">
+                        <img src="./assets/img/github.png" alt="GitHub" class="img-sobre">
+                    </a>
+                </li>
+                <li><a href="https://wa.me/5511940794704" target="_blank">
+                        <img src="./assets/img/whatsapp.png" alt="Whatszapp" class="img-sobre">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="about__right">
+            <h3 class="tertiary-title mb-m">
+                Um apaixonado por tecnologia!
+            </h3>
+            <p>Com 10 anos de experiência na área de Tecnologia da Informação,
+                atuando em diversos campos, como Suporte, Infraestrutura e Dados/BI.</p>
+            <p>Motivado pela minha busca constante por novos desafios, estou em transição de carreira,
+                movendo-me da área de Dados para Desenvolvimento. Há cerca de um ano,
+                comecei a atuar como freelancer em desenvolvimento,
+                o que me permitiu mergulhar de cabeça nesse universo repleto de transformações e desafios,
+                consolidando minhas habilidades e expandindo meu conhecimento na área.
+            </p>
+        </div>
+    </section>
+
+    <!-- habilidades -->
+    <section id="skills" class="skills">
+        <div class="skills__content max-width">
+            <h2 class="tertiary-title">Minhas Habilidades</h2>
+            <p class="description">
+                Descubra as habilidades e ferramentas que estou evoluindo para criar
+                soluções criativas e funcionais para meus clientes.
+                Com um foco crescente em desenvolvimento, estou constantemente aprimorando minhas
+                competências em tecnologias modernas para entregar resultados de alta qualidade.
+            </p>
+            <ul>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="./assets/img/img-web.png" alt="Web" class="img-sobre">
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Estou comprometido em aplicar as melhores práticas e as ferramentas mais
+                        recentes para criar soluções robustas e inovadoras.
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="./assets/img/img-front-end.png" alt="Front-End" class="img-sobre">
+                    </div>
+                    <h3>Front-End</h3>
+                    <p>Interfaces de usuário intuitivas e responsivas, utilizando tecnologias modernas como
+                        HTML, CSS e JavaScript.
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="./assets/img/img-back-end.png" alt="Back-End" class="img-sobre">
+                    </div>
+                    <h3>Back-End</h3>
+                    <p>Construir e manter a lógica do servidor e as bases de dados que sustentam aplicações web.
+                        Utilizo tecnologias modernas como Node.js e TypeScript para criar APIs robustas e escaláveis.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer__content max-width mb-0">
+            <!-- <h2 class="tertiary-title mb-s">Vamos conversar?</h2> -->
+            <!-- <p class="mb-m">
+                Ficarei feliz em saber mais sobre suas ideias, projetos e como podemos
+                trabalhar juntos para torná-los realidade.
+            </p> -->
+            <!-- <div class="footer__contact mb-m">
+                <span class="mb-m">✉ ogoprs@gmail.com</span>
+                <span>📞 (11) 94079-4704</span>
+            </div> -->
+            <ul>
+                <!-- <li><a href="https://www.linkedin.com/in/diogo-pereira-dos-santos/" target="_blank">
+                        <img src="./assets/img/linkdin.png" alt="Linkedin" class="img-sobre">
+                    </a>
+                </li> -->
+                <li><a href="https://www.linkedin.com/in/diogo-pereira-dos-santos-19b0532b6/" target="_blank">
+                        <img src="./assets/img/linkdin.png" alt="Linkedin" class="img-sobre">
+                    </a>
+                </li>
+                <li><a href="https://github.com/dprstecnologia" target="_blank">
+                        <img src="./assets/img/github.png" alt="GitHub" class="img-sobre">
+                    </a>
+                </li>
+                <li><a href="https://wa.me/5511940794704" target="_blank">
+                        <img src="./assets/img/whatsapp.png" alt="Whatszapp" class="img-sobre">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copyright">
+                &copy; 2024 por Diogo Pereira dos Santos. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./script.js"></script>
+    <!-- scripts dos icones -->
+</body>
+
+</html>

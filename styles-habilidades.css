@@ -1,0 +1,52 @@
+/* Configurações habilidades */
+.skills {
+  scroll-margin-top: 15rem;
+}
+
+.skills .skills__content {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.skills .skills__content .description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+}
+
+.skills .skills__content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
+}
+
+.skills .skills__content ul li .image-container {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para transformações e sombras */
+}
+
+/* Estilo da imagem dentro do container */
+.skills .skills__content ul li .image-container img {
+  width: 30px; /* Largura padrão da imagem */
+  height: 30px; /* Altura padrão da imagem */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transições suaves para transformações e filtros */
+}
+
+/* Efeito de hover para o container da imagem */
+.skills .skills__content ul li .image-container:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do container */
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.2); /* Aumenta o efeito de sombra */
+}
+
+/* Efeito de hover para a imagem dentro do container */
+.skills .skills__content ul li .image-container:hover img {
+  filter: brightness(1.2); /* Aumenta o brilho da imagem */
+}
